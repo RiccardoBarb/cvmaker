@@ -5,13 +5,13 @@ Edit your data in `template.yml`, run one command, get a PDF.
 
 ## Files
 
-| File                 | Description             |
-|----------------------|-------------------------|
-| `template.yaml`      | Your CV data (the only file you need to edit) |
-| `template.tex`       | LaTeX template with `<<PLACEHOLDERS>>` |
-| `fortysecondscv.cls` | LaTeX class file        |
-| `cvmake.py`          | Fills `template.tex` with data from `template.yml` → `output.tex` |
-| `cvbuild.sh`         | One-command build script |
+| File                 | Description                                                   |
+|----------------------|---------------------------------------------------------------|
+| `template.yaml`      | Your CV data (the only file you need to edit)                 |
+| `template.tex`       | LaTeX template with `<<PLACEHOLDERS>>`                        |
+| `fortysecondscv.cls` | LaTeX class file                                              |
+| `cvmake.py`          | Fills `template.tex` with data from `template.yml` → `cv.tex` |
+| `cvbuild.sh`         | One-command build script                                      |
 
 ## Requirements
 
