@@ -1,0 +1,130 @@
+personal:
+  name: Riccardo Barbieri
+  role: AI Engineer
+  phone: "+00 0000000000"
+  email: email@email.com
+  linkedin: rbarb
+  github: RiccardoBarb
+
+technical_skills:
+  tags:
+    - ML
+    - NLP
+    - MLOps
+    - Deep Learning
+    - Data Pipelines
+    - LLM Workflows
+    - RAG
+    - Experimentation
+    - Evaluation
+  tools:
+    - category: Programming
+      items: Python, SQL, MATLAB, R
+    - category: ML & DL
+      items: Scikit-learn, PyTorch, spaCy, Transformers
+    - category: LLM & RAG
+      items: LangChain, LangGraph, Pocketflow, Vector DBs
+    - category: Data Pipelines
+      items: Pandas, NumPy, Spark, Databricks
+    - category: Cloud & DevOps
+      items: AWS, Azure, Docker, Git
+
+transferable_skills:
+  - name: Project Management
+    description: >
+      I manage complex projects involving ML, statistical modeling and AI.
+      I collaborate with multidisciplinary teams, adapting to changing contexts
+      to achieve ambitious goals, even with limited resources.
+  - name: Creative Thinking and Problem Solving
+    description: >
+      I develop innovative solutions for LLM-based systems such as RAG and agents,
+      ML applications, predictive models and data pipelines. I combine an analytical
+      approach with an experimental mindset, with a strong focus on scalability and generalizability.
+  - name: Interpersonal Skills
+    description: >
+      I collaborate effectively with research, data & analytics, data science, and AI engineering teams.
+      I support junior colleagues and facilitate knowledge transfer. I am regarded as a positive
+      and optimistic team member who helps build constructive working relationships.
+
+experience:
+  - company: BitBang
+    url: https://www.bitbang.com
+    location: Bologna
+    period: 2021 - Ongoing
+    roles:
+      - title: AI Engineer
+        period: 2024 - Ongoing
+        summary: Development, design, and deployment of systems based on LLM and ML.
+        highlights:
+          - name: Enterprise LLM workflows
+            description: >
+              Technical lead in the development of LLM-based systems (RAG and agents).
+              Designed and implemented ingestion and retrieval pipelines for multiple products
+              across different business units. Coordinated a cross-functional team to support
+              the progressive evolution of the system into an enterprise AI platform.
+          - name: Automation & classification
+            description: >
+              Responsible for the development of a purchase-request classification system.
+              Conducted the system analysis, design, and initial implementation, followed by
+              delegation of activities and mentoring of a junior colleague.
+          - name: Cash flow forecast
+            description: >
+              Re-engineered preprocessing, training, forecasting, and output pipelines to
+              enhance scalability, reproducibility, and system reliability.
+      - title: Data Scientist
+        period: 2021 - 2024
+        summary: Implementation of data-driven solutions based on statistical and ML models.
+        highlights:
+          - name: Customer analytics & demand forecasting
+            description: >
+              Contributed to the design of a forecasting system for product mix planning.
+              Performed advanced analyses of user navigation data from e-commerce platforms
+              to support marketing and personalization strategies.
+          - name: Marketing performance measurement
+            description: >
+              Developed tools for Marketing Mix Modeling based on open-source libraries.
+              Performed attribution analyses including online and offline channels.
+          - name: NLP & Deep Learning
+            description: >
+              Developed a custom aspect-extraction model in PyTorch and deployed it in a
+              prototype AWS web app for aspect-based sentiment analysis. Experience applying
+              open-source NLP models.
+
+  - company: Charitè / BCCN
+    url:
+      - https://www.charite.de/en/
+      - https://www.bccn-berlin.de
+    location: Berlin
+    period: 2016 - 2021
+    roles:
+      - title: Researcher in Cognitive Neuroscience
+        period: 2017 - 2021
+        summary: Experimental research on brain signals related to decision-making.
+        highlights:
+          - name: Experimental design & data analyses
+            description: >
+              Designed and conducted behavioral and neuroimaging experiments on human participants.
+              Developed data analysis pipelines using statistical and ML models.
+          - name: Results dissemination
+            description: >
+              Authored peer-reviewed publications, presented research at international conferences.
+              Published anonymized datasets and reproducible code for the research community.
+      - title: Research Intern
+        period: Feb 2016 - Sep 2016
+        summary: Computational neuroscience research conducted for master's thesis abroad.
+        highlights:
+          - name: Neuroimaging data analysis
+            description: >
+              Experimentation with ML techniques and development of a classification pipeline
+              starting from an existing dataset.
+          - name: Lab work & programming
+            description: >
+              MATLAB programming and collaboration within an interdisciplinary research team.
+
+education:
+  - degree: Doctoral Degree
+    institution: Charitè - Universitätsmedizin Berlin
+  - degree: Master in Cognitive Neuroscience
+    institution: Università di Padova
+  - degree: Bachelor in Psychology
+    institution: Università di Bologna

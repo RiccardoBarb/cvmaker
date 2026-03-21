@@ -1,0 +1,197 @@
+% FortySecondsCV LaTeX template
+% Copyright © 2019-2020 René Wirnata <rene.wirnata@pandascience.net>
+% Licensed under the 3-Clause BSD License. See LICENSE file for details.
+% Please visit https://github.com/PandaScience/FortySecondsCV for the most
+% recent version! For bugs or feature requests, please open a new issue on
+% github.
+%
+% Contributors
+% ------------
+% * ifokkema
+% * Bertbk
+% * Hespe
+%
+% Attributions
+% ------------
+% * fortysecondscv is based on the twentysecondcv class by Carmine Spagnuolo
+%   (cspagnuolo@unisa.it), released under the MIT license and available under
+%   https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex
+% * further attributions are indicated immediately before corresponding code
+
+
+%-------------------------------------------------------------------------------
+%                             ADDITIONAL PACKAGES
+%-------------------------------------------------------------------------------
+\documentclass[
+	a4paper,
+	 maincolor=cvgreen,
+	 sectioncolor=cvgreen,
+	 subsectioncolor=cvgreen,
+	 itemtextcolor=antracite!80,
+	 profilepicstyle=profilecircle,
+]{fortysecondscv}
+
+% improve word spacing and hyphenation
+\usepackage{microtype}
+\usepackage{ragged2e}
+
+% uncomment in case you don't want any hyphenation
+\usepackage[none]{hyphenat}
+
+% take care of proper font encoding
+\ifxetexorluatex
+	\usepackage{fontspec}
+	\defaultfontfeatures{Ligatures=TeX}
+\else
+	\usepackage[utf8]{inputenc}
+	\usepackage[T1]{fontenc}
+\fi
+
+% enable mathematical syntax for some symbols like \varnothing
+\usepackage{amssymb}
+\newcommand{\slightlylarger}{\fontsize{11pt}{12pt}\selectfont}
+
+% bubble diagram configuration
+\usepackage{smartdiagram}
+\smartdiagramset{
+	% default font size is \large, so adjust to harmonize with sidebar layout
+	bubble center node font = \footnotesize,
+	bubble node font = \footnotesize,
+	% default: 4cm/2.5cm; make minimum diameter relative to sidebar size
+	bubble center node size = 0.4\sidebartextwidth,
+	bubble node size = 0.25\sidebartextwidth,
+	distance center/other bubbles = 1.5em,
+	% set center bubble color
+	bubble center node color = maincolor!70,
+	% define the list of colors usable in the diagram
+	set color list = {maincolor!10, maincolor!40,
+	maincolor!20, maincolor!60, maincolor!35},
+	% sets the opacity at which the bubbles are shown
+	bubble fill opacity = 0.8,
+}
+
+
+%-------------------------------------------------------------------------------
+%                            PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+%% mandatory information
+% your name
+\cvname{\begin{center} \textbf{\\[20pt] Riccardo Barbieri}\end {center}}
+% job title/career
+\cvjobtitle{\begin{center}\textbf{\LARGE AI Engineer}\end {center}}
+
+%% optional information
+% profile picture
+%\cvprofilepic{pics/self.png}
+
+% NOTE: ordering in sidebar will mimic the following order
+\cvphone{+00 0000000000}
+% personal website
+%\cvsite{https://pandascience.net}
+% email address
+\cvaddress{email@email.com}
+\cvLinkedin{rbarb}
+\cvgithub{RiccardoBarb}
+
+
+%-------------------------------------------------------------------------------
+%                              SIDEBAR 1st PAGE
+%-------------------------------------------------------------------------------
+% add more profile sections to sidebar on first page
+\addtofrontsidebar{
+	% include gosquare national flags from https://github.com/gosquared/flags;
+	% naming according to ISO 3166-1 alpha-2 country codes
+	\graphicspath{{pics/flags/}}
+
+
+	\profilesection{Technical Skills}
+	\begin{sidebarminipage}
+        \fontsize{9.5pt}{11pt}\selectfont
+		\chartlabel{ML}
+		\chartlabel{NLP}
+		\chartlabel{MLOps}
+		\chartlabel{Deep Learning}
+		\chartlabel{Data Pipelines}
+		\chartlabel{LLM Workflows}
+		\chartlabel{RAG}
+		\chartlabel{Experimentation}
+		\chartlabel{Evaluation}
+
+	\end{sidebarminipage}
+
+    \skill{}{\textbf{Programming:} \emph{Python, SQL, MATLAB, R}}
+    \skill{}{\textbf{ML \& DL:} \emph{Scikit-learn, PyTorch, spaCy, Transformers}}
+    \skill{}{\textbf{LLM \& RAG:} \emph{LangChain, LangGraph, Pocketflow, Vector DBs}}
+    \skill{}{\textbf{Data Pipelines:} \emph{Pandas, NumPy, Spark, Databricks}}
+    \skill{}{\textbf{Cloud \& DevOps:} \emph{AWS, Azure, Docker, Git}}
+
+
+\profilesection{Transferable Skills}
+
+		\skill{}{\textbf{Project Management:}\emph{\slightlylarger{\\{I manage complex projects involving ML, statistical modeling and AI. I collaborate with multidisciplinary teams, adapting to changing contexts to achieve ambitious goals, even with limited resources.}}}}
+		\skill{}{\textbf{Creative Thinking and Problem Solving:}\emph{\slightlylarger{\\{I develop innovative solutions for LLM-based systems such as RAG and agents, ML applications, predictive models and data pipelines. I combine an analytical approach with an experimental mindset, with a strong focus on scalability and generalizability.}}}}
+		\skill{}{\textbf{Interpersonal Skills:}\emph{\slightlylarger{\\{I collaborate effectively with research, data \& analytics, data science, and AI engineering teams. I support junior colleagues and facilitate knowledge transfer. I am regarded as a positive and optimistic team member who helps build constructive working relationships.}}}}
+
+}
+
+%-------------------------------------------------------------------------------
+%                         TABLE ENTRIES RIGHT COLUMN
+%-------------------------------------------------------------------------------
+\begin{document}
+
+\makefrontsidebar
+
+\cvsection{\huge {Work Experience}}
+\begin{cvtable}[2]
+    \cvitem{\textbf{\Large{\href{https://www.bitbang.com}{BitBang}}}\hspace{0.5em}\slightlylarger{(2021 - Ongoing)}\hspace{0.5em}}{\slightlylarger{Bologna}}{}{}
+    \cvitem{\Large{AI Engineer}\hspace{0.5em}\slightlylarger{(2024 - Ongoing)}}{}
+    {\\[-0.5em]\slightlylarger{\emph{Development, design, and deployment of systems based on LLM and ML.}}
+    \addtolength{\leftmargini}{-1.3em}
+    \begin{itemize}
+        \setlength\itemsep{-0.1em}
+        \setlength\topsep{-0.1em}
+        \item \textbf{Enterprise LLM workflows:} Technical lead in the development of LLM-based systems (RAG and agents). Designed and implemented ingestion and retrieval pipelines for multiple products across different business units. Coordinated a cross-functional team to support the progressive evolution of the system into an enterprise AI platform.
+        \item \textbf{Automation \& classification:} Responsible for the development of a purchase-request classification system. Conducted the system analysis, design, and initial implementation, followed by delegation of activities and mentoring of a junior colleague.
+        \item \textbf{Cash flow forecast:} Re-engineered preprocessing, training, forecasting, and output pipelines to enhance scalability, reproducibility, and system reliability.
+    \end{itemize}}
+    \cvitem{\Large{Data Scientist}\hspace{0.5em}\slightlylarger{(2021 - 2024)}}{}
+    {\\[-0.5em]\slightlylarger{\emph{Implementation of data-driven solutions based on statistical and ML models.}}
+    \addtolength{\leftmargini}{-1.3em}
+    \begin{itemize}
+        \setlength\itemsep{-0.1em}
+        \setlength\topsep{-0.1em}
+        \item \textbf{Customer analytics \& demand forecasting:} Contributed to the design of a forecasting system for product mix planning. Performed advanced analyses of user navigation data from e-commerce platforms to support marketing and personalization strategies.
+        \item \textbf{Marketing performance measurement:} Developed tools for Marketing Mix Modeling based on open-source libraries. Performed attribution analyses including online and offline channels.
+        \item \textbf{NLP \& Deep Learning:} Developed a custom aspect-extraction model in PyTorch and deployed it in a prototype AWS web app for aspect-based sentiment analysis. Experience applying open-source NLP models.
+    \end{itemize}}
+    \cvitem{\textbf{\Large{\href{https://www.charite.de/en/}{Charitè} / \href{https://www.bccn-berlin.de}{BCCN}}}\hspace{0.5em}\slightlylarger{(2016 - 2021)}\hspace{0.5em}}{\slightlylarger{Berlin}}{}{}
+    \cvitem{\Large{Researcher in Cognitive Neuroscience}\hspace{0.5em}\slightlylarger{(2017 - 2021)}}{}
+    {\\[-0.5em]\slightlylarger{\emph{Experimental research on brain signals related to decision-making.}}
+    \addtolength{\leftmargini}{-1.3em}
+    \begin{itemize}
+        \setlength\itemsep{-0.1em}
+        \setlength\topsep{-0.1em}
+        \item \textbf{Experimental design \& data analyses:} Designed and conducted behavioral and neuroimaging experiments on human participants. Developed data analysis pipelines using statistical and ML models.
+        \item \textbf{Results dissemination:} Authored peer-reviewed publications, presented research at international conferences. Published anonymized datasets and reproducible code for the research community.
+    \end{itemize}}
+    \cvitem{\Large{Research Intern}\hspace{0.5em}\slightlylarger{(Feb 2016 - Sep 2016)}}{}
+    {\\[-0.5em]\slightlylarger{\emph{Computational neuroscience research conducted for master's thesis abroad.}}
+    \addtolength{\leftmargini}{-1.3em}
+    \begin{itemize}
+        \setlength\itemsep{-0.1em}
+        \setlength\topsep{-0.1em}
+        \item \textbf{Neuroimaging data analysis:} Experimentation with ML techniques and development of a classification pipeline starting from an existing dataset.
+        \item \textbf{Lab work \& programming:} MATLAB programming and collaboration within an interdisciplinary research team.
+    \end{itemize}}
+\end{cvtable}
+
+
+\cvsection{\huge{Education}}
+
+\begin{cvtable}[2]
+   \cvitem{\textbf{\large{Doctoral Degree}}}{\normalsize{Charitè - Universitätsmedizin Berlin}}{}
+   \cvitem{\textbf{\large{Master in Cognitive Neuroscience}}}{\normalsize{Università di Padova}}{}
+   \cvitem{\textbf{\large{Bachelor in Psychology}}}{\normalsize{Università di Bologna}}{}
+\end{cvtable}
+
+\end{document}
