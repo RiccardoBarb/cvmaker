@@ -1,10 +1,11 @@
 personal:
   name: Riccardo Barbieri
-  role: AI Engineer
+  role: AI&ML Engineer
   phone: "+00 0000000000"
-  email: email@email.com
+  email: email@gmail.com
   linkedin: rbarb
   github: RiccardoBarb
+  website: https://www.riccardobarbieri.me
 
 technical_skills:
   tags:
@@ -22,10 +23,10 @@ technical_skills:
       items: Python, SQL, MATLAB, R
     - category: ML & DL
       items: Scikit-learn, PyTorch, spaCy, Transformers
-    - category: LLM & RAG
-      items: LangChain, LangGraph, Pocketflow, Vector DBs
+    - category: LLMs & Evals
+      items: LangChain, LangGraph, MLFlow, LangSmith, Vector DBs
     - category: Data Pipelines
-      items: Pandas, NumPy, Spark, Databricks
+      items: Pandas, NumPy
     - category: Cloud & DevOps
       items: AWS, Azure, Docker, Git
 
@@ -58,37 +59,48 @@ experience:
         highlights:
           - name: Enterprise LLM workflows
             description: >
-              Technical lead in the development of LLM-based systems (RAG and agents).
-              Designed and implemented ingestion and retrieval pipelines for multiple products
-              across different business units. Coordinated a cross-functional team to support
-              the progressive evolution of the system into an enterprise AI platform.
+              Technical lead in the development of RAG and agents serving
+              multiple business units. Developed ingestion and retrieval pipelines
+              with disambiguation flows and metadata-driven query resolution.
+              Permission-aware retrieval to enforce access rules. Data anonymization through
+              automatic entity extraction with lightweight local NLP models.
+              Coordinated a cross-functional team to support the progressive evolution of the system into an
+              enterprise AI platform. Stakeholder management across three different products.
           - name: Automation & classification
             description: >
               Responsible for the development of a purchase-request classification system.
-              Conducted the system analysis, design, and initial implementation, followed by
-              delegation of activities and mentoring of a junior colleague.
+              Delivered a hybrid model combining random forest with vector retrieval module
+              over procurement guidelines.
+              Mentoring and progressive delegation of activities to a junior colleague.
           - name: Cash flow forecast
             description: >
-              Re-engineered preprocessing, training, forecasting, and output pipelines to
-              enhance scalability, reproducibility, and system reliability.
+              Re-engineered a forecasting system that had grown into an unmaintainable
+              collection of over 20 heterogeneous models spread across multiple data sources.
+              The resulting system was more reproducible, maintainable and explainable.
+              Outputs support weekly reporting to the finance department.
       - title: Data Scientist
         period: 2021 - 2024
         summary: Implementation of data-driven solutions based on statistical and ML models.
         highlights:
           - name: Customer analytics & demand forecasting
             description: >
-              Contributed to the design of a forecasting system for product mix planning.
-              Performed advanced analyses of user navigation data from e-commerce platforms
-              to support marketing and personalization strategies.
+              Contributed to the design of a forecasting model for raw material requirements
+              based on historical sales and a multi-feature product matrix. Performed
+              clustering analyses on e-commerce navigation data to identify traffic patterns
+              across user segments, supporting marketing and personalization strategies.
           - name: Marketing performance measurement
             description: >
-              Developed tools for Marketing Mix Modeling based on open-source libraries.
-              Performed attribution analyses including online and offline channels.
+              Developed an internal Marketing Mix Modeling framework supporting
+              what-if simulations and budget optimization.
+              Results were served through an Azure web application backed by
+              a deployed model on Azure ML. The tool became part of the company's offering.
           - name: NLP & Deep Learning
             description: >
-              Developed a custom aspect-extraction model in PyTorch and deployed it in a
-              prototype AWS web app for aspect-based sentiment analysis. Experience applying
-              open-source NLP models.
+              Developed a graph attention network for aspect-based opinion extraction in
+              PyTorch Geometric, pre-trained on Wikipedia with a masked node prediction
+              objective and fine-tuned on SemEval datasets, outperforming a rule-based
+              dependency parsing baseline. Conducted topic modeling on
+              survey data using sentence transformers.
 
   - company: Charitè / BCCN
     url:
@@ -122,9 +134,9 @@ experience:
               MATLAB programming and collaboration within an interdisciplinary research team.
 
 education:
-  - degree: Doctoral Degree
-    institution: Charitè - Universitätsmedizin Berlin
-  - degree: Master in Cognitive Neuroscience
-    institution: Università di Padova
-  - degree: Bachelor in Psychology
-    institution: Università di Bologna
+  - category: Doctoral Degree
+    items: Charitè - Universitätsmedizin Berlin
+  - category: Master in Cognitive Neuroscience
+    items: Università di Padova
+  - category: Bachelor in Psychology
+    items: Università di Bologna

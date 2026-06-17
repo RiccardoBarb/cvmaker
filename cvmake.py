@@ -64,7 +64,7 @@ def build_work_experience(experience: list) -> str:
 
         lines.append(
             f"    \\cvitem{{\\textbf{{\\Large{{{company_tex}}}}}"
-            f"\\hspace{{0.5em}}\\slightlylarger{{({period})}}"
+            f"\\hspace{{0.5em}}\\slightlylarger{{({period})}} \\xrfill[.5ex]{{1pt}}"
             f"\\hspace{{0.5em}}}}{{\\slightlylarger{{{location}}}}}{{}}{{}}",
         )
 
@@ -126,11 +126,12 @@ def main():
         "<<EMAIL>>":             esc(p.get("email", "")),
         "<<LINKEDIN>>":          esc(p.get("linkedin", "")),
         "<<GITHUB>>":            esc(p.get("github", "")),
+        "<<WEBSITE>>":            esc(p.get("website", "")),
         "<<SKILL_TAGS>>":        build_skill_tags(ts.get("tags", [])),
         "<<SKILL_TOOLS>>":       build_skill_tools(ts.get("tools", [])),
         "<<TRANSFERABLE_SKILLS>>": build_transferable_skills(data.get("transferable_skills", [])),
         "<<WORK_EXPERIENCE>>":   build_work_experience(data.get("experience", [])),
-        "<<EDUCATION>>":         build_education(data.get("education", [])),
+        "<<EDUCATION>>":         build_skill_tools(data.get("education", [])),
     }
 
     for placeholder, value in replacements.items():

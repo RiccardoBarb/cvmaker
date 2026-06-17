@@ -248,12 +248,12 @@
 	{\color{subsectioncolor}\normalfont\large}{}{0pt}{}
 
 % abuse subsubsection as profilesection in left column
-\newcommand*{\profilesection}[1]{\vspace{0.5em}\subsubsection*{#1}\vspace{0.5em}}
+\newcommand*{\profilesection}[1]{\vspace{-0.5em}\subsubsection*{#1}\vspace{-0.5em}}
 \titleformat{\subsubsection}
 	{\color{pseccolor}\normalfont\large}{}{0pt}{\color{pseccolor}\sectionline}
 % set spaces before and after profilesections: <left><before><after>
 % "starred version kills the indentation of the paragraph following the title"
-\titlespacing*{\subsubsection}{0pt}{0.2ex}{0.2ex}
+\titlespacing*{\subsubsection}{0pt}{0.4ex}{0.4ex}
 
 
 %-------------------------------------------------------------------------------
@@ -462,7 +462,7 @@
 
 \newenvironment{sidebarminipage}%
 	{\begin{minipage}{\sidebartextwidth}}%
-	{\end{minipage}\vspace{1em}}%
+	{\end{minipage}\vspace{0.3em}}%
 
 
 \newenvironment{memberships}[1][1em]%
@@ -528,7 +528,7 @@
 		\nameandjob
 
 		% personal information
-		\vspace*{0.6em}
+		\vspace*{-0.3em}
 		\begin{icontable}[1.6]{1.2em}{0.2em}
 			\personaldata
 		\end{icontable}
